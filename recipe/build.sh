@@ -35,7 +35,7 @@ fi
             --host=${HOST} \
             --enable-threadsafe \
             --enable-shared=yes \
-            --enable-readline \
+            --disable-readline \
             --disable-editline \
             --disable-static \
             --disable-tcl \

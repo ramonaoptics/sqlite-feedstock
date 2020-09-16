@@ -17,7 +17,8 @@ source:
     - expose_symbols.patch  # [win]
 
 build:
-  number: 0
+  # Use builds in the 100s to specificy that we don't use readline
+  number: 100
 
 requirements:
   build:
@@ -25,10 +26,9 @@ requirements:
     - make  # [not win]
     - libtool  # [not win]
   host:
-    - ncurses  # [not win]
-    - readline  # [not win]
+    #- ncurses  # [not win]
+    #- readline  # [not win]
     - zlib  # [not win]
-
 
 outputs:
   - name: libsqlite
@@ -79,8 +79,8 @@ outputs:
         - make  # [not win]
         - libtool  # [not win]
       host:
-        - ncurses  # [not win]
-        - readline  # [not win]
+        # - ncurses  # [not win]
+        # - readline  # [not win]
         - zlib  # [not win]
       run:
         - {{ pin_subpackage('libsqlite', exact=True) }}
