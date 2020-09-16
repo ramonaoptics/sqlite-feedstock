@@ -17,7 +17,8 @@ source:
     - expose_symbols.patch  # [win]
 
 build:
-  number: 0
+  # Use builds in the 100s to specificy that we don't use readline
+  number: 100
   run_exports:
     # sometimes adds new symbols.  Default behavior is OK.
     #    https://abi-laboratory.pro/tracker/timeline/sqlite/
@@ -30,11 +31,11 @@ requirements:
     - libtool  # [not win]
   host:
     - ncurses  # [not win]
-    - readline  # [not win]
+    #- readline  # [not win]
     - zlib  # [not win]
   run:
     - ncurses  # [not win]
-    - readline  # [not win]
+    #- readline  # [not win]
     - zlib  # [not win]
 
 test:
