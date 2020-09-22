@@ -18,7 +18,7 @@ source:
 
 build:
   # Use builds in the 100s to specificy that we don't use readline
-  number: 100
+  number: 101
   run_exports:
     # sometimes adds new symbols.  Default behavior is OK.
     #    https://abi-laboratory.pro/tracker/timeline/sqlite/
@@ -30,11 +30,11 @@ requirements:
     - make  # [not win]
     - libtool  # [not win]
   host:
-    - ncurses  # [not win]
+    #- ncurses  # [not win]
     #- readline  # [not win]
     - zlib  # [not win]
   run:
-    - ncurses  # [not win]
+    #- ncurses  # [not win]
     #- readline  # [not win]
     - zlib  # [not win]
 
