@@ -18,7 +18,7 @@ source:
 
 build:
   # Use builds in the 100s to specificy that we don't use readline
-  number: 101
+  number: 100
   run_exports:
     # sometimes adds new symbols.  Default behavior is OK.
     #    https://abi-laboratory.pro/tracker/timeline/sqlite/
