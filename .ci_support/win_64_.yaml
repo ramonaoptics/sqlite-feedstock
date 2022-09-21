@@ -1,8 +1,8 @@
 c_compiler:
 - vs2019
 channel_sources:
-- conda-forge
+- ramonaoptics,conda-forge,defaults
 channel_targets:
-- conda-forge main
+- ramonaoptics main
 target_platform:
 - win-64
